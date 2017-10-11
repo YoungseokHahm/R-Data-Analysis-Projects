@@ -1,0 +1,27 @@
+---
+title: 'Housing Prices: Advanced Regression Techniques'
+author: "Youngseok Hahm"
+date: "10/10/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Data loading
+```{r data_load}
+dataset = read.csv("~/Desktop/GitHub/R-Data-Analysis-Projects/Kaggle_Data_Set/House Prices: Advanced Regression Techniques/train.csv") # Comma separated dataset (read.csv)
+head(dataset)
+```
+
+### Data description
+```{r data_description}
+names(dataset) # 81 variables with name
+```
+
+- **Sale Price**: Target (Respons) variable.
+- All other 80 variables: predictor variables.
+
+### Data Analysis
+1. Find out the relationship between predictor variables and target variable.
